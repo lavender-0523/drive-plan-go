@@ -69,13 +69,30 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden bg-primary border-t border-primary-foreground/10 pb-4">
           <ul className="flex flex-col items-center gap-4 pt-4">
-            {links.map((l) => (
-              <li key={l.href}>
-                <a href={l.href} onClick={() => setOpen(false)} className="text-primary-foreground/80 hover:text-accent transition-colors font-medium">
-                  {l.label}
+            {isHome &&
+              links.map((l) => (
+                <li key={l.href}>
+                  <a href={l.href} onClick={() => setOpen(false)} className="text-primary-foreground/80 hover:text-accent transition-colors font-medium">
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            {!isHome && (
+              <li>
+                <a href="/" onClick={() => setOpen(false)} className="text-primary-foreground/80 hover:text-accent transition-colors font-medium">
+                  Home
                 </a>
               </li>
-            ))}
+            )}
+            <li>
+              <button
+                onClick={() => { navigate("/dashboard"); setOpen(false); }}
+                className="flex items-center gap-1.5 text-primary-foreground/80 hover:text-accent transition-colors font-medium"
+              >
+                <ClipboardList size={16} />
+                My Bookings
+              </button>
+            </li>
             <li>
               <a href="tel:+919876543210" className="bg-accent-gradient text-accent-foreground px-5 py-2 rounded-lg font-semibold text-sm">
                 <Phone size={16} className="inline mr-2" />Call Now
