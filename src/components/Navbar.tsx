@@ -1,6 +1,7 @@
 import logo from "@/assets/logo.png";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X, ClipboardList } from "lucide-react";
 import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
