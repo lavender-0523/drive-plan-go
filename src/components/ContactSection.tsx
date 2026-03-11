@@ -40,7 +40,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="font-heading font-semibold text-foreground">Call Us</p>
-                <a href="tel:+919876543210" className="text-muted-foreground hover:text-accent transition-colors">+91 98765 43210</a>
+                <a className="text-muted-foreground hover:text-accent transition-colors" href="tel:+919920535133">+91 9920535133 </a>
               </div>
             </div>
             <div className="flex gap-4 items-start">
@@ -49,7 +49,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="font-heading font-semibold text-foreground">Email Us</p>
-                <a href="mailto:info@rjbarai.com" className="text-muted-foreground hover:text-accent transition-colors">info@rjbarai.com</a>
+                <a href="mailto:info@rjbarai.com" className="text-muted-foreground hover:text-accent transition-colors">​rjbaraitoursandtravels@gmail.com</a>
               </div>
             </div>
             <div className="flex gap-4 items-start">
@@ -58,14 +58,14 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="font-heading font-semibold text-foreground">Visit Us</p>
-                <p className="text-muted-foreground">Rajasthan, India</p>
+                <p className="text-muted-foreground">Mumbai, India</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default ContactSection;

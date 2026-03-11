@@ -34,7 +34,7 @@ const HeroSection = () => {
                   <Calendar size={16} className="text-accent shrink-0" />
                   <input type="date" className="bg-transparent text-sm outline-none w-full text-foreground" />
                 </div>
-                <button className="bg-accent-gradient text-accent-foreground rounded-lg px-4 py-2.5 font-semibold text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+                <button className="bg-accent-gradient text-accent-foreground rounded-lg px-4 py-2.5 font-semibold text-sm items-center justify-center gap-2 hover:opacity-90 transition-opacity flex flex-row">
                   <Search size={16} />
                   Search
                 </button>
@@ -47,8 +47,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
