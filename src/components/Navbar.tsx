@@ -5,6 +5,9 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   const links = [
     { label: "Home", href: "#home" },
